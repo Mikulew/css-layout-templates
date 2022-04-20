@@ -33,6 +33,7 @@ body {
 .parent {
   display: flex;
   border: 1px solid var(--yangColor);
+  width: 100%;
 }
 
 .child {
@@ -81,4 +82,9 @@ body {
 
 .direction-rtl {
   direction: rtl;
+}
+
+.cjk-characters {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }

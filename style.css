@@ -6,7 +6,27 @@
   --child-3: #e85d04;
   --child-4: #d00000;
   --child-5: #9d0208;
-  --size: 3rem;
+  --child-A: #ffea00;
+  --child-B: #ffdd00;
+  --child-C: #ffd000;
+  --child-D: #ffc300;
+  --child-E: #ffba08;
+  --child-F: #ffaa00;
+  --child-G: #faa307;
+  --child-H: #ffa200;
+  --child-I: #ff9500;
+  --child-J: #f48c06;
+  --child-K: #ff8800;
+  --child-L: #ff7b00;
+  --child-M: #e85d04;
+  --child-N: #dc2f02;
+  --child-O: #d00000;
+  --child-P: #9b2226;
+  --child-R: #9d0208;
+  --child-S: #6a040f;
+  --child-T: #370617;
+  --child-U: #03071e;
+  --size: 4rem;
 }
 
 body {
@@ -14,6 +34,7 @@ body {
   width: 100%;
   height: 100%;
   background: var(--yinColor);
+  overflow-x: hidden;
 }
 
 *,
@@ -34,12 +55,22 @@ body {
   display: flex;
   border: 1px solid var(--yangColor);
   width: 100%;
+  height: auto;
 }
 
 .child {
   display: grid;
   place-items: center;
+  padding: 1rem;
+}
+
+.child-square {
   width: var(--size);
+  height: var(--size);
+}
+
+.child-rectangle {
+  min-width: var(--size);
   height: var(--size);
 }
 
@@ -68,6 +99,92 @@ body {
   background-color: var(--child-5);
 }
 
+.child-A {
+  background-color: var(--child-A);
+}
+
+.child-B {
+  background-color: var(--child-B);
+}
+
+.child-C {
+  background-color: var(--child-C);
+}
+
+.child-D {
+  background-color: var(--child-D);
+}
+
+.child-E {
+  background-color: var(--child-E);
+}
+
+.child-F {
+  background-color: var(--child-F);
+}
+
+.child-G {
+  background-color: var(--child-G);
+}
+
+.child-H {
+  background-color: var(--child-H);
+}
+
+.child-I {
+  background-color: var(--child-I);
+}
+
+.child-J {
+  background-color: var(--child-J);
+}
+
+.child-K {
+  background-color: var(--child-K);
+}
+
+.child-L {
+  background-color: var(--child-L);
+}
+
+.child-M {
+  background-color: var(--child-M);
+}
+
+.child-N {
+  background-color: var(--child-N);
+}
+
+.child-O {
+  background-color: var(--child-O);
+  color: var(--child-S);
+}
+
+.child-P {
+  background-color: var(--child-P);
+  color: var(--child-U);
+}
+
+.child-R {
+  background-color: var(--child-R);
+  color: var(--child-M);
+}
+
+.child-S {
+  background-color: var(--child-S);
+  color: var(--child-N);
+}
+
+.child-T {
+  background-color: var(--child-T);
+  color: var(--child-O);
+}
+
+.child-U {
+  background-color: var(--child-U);
+  color: var(--child-S);
+}
+
 .flex-direction-row-reverse {
   flex-direction: row-reverse;
 }
@@ -78,6 +195,14 @@ body {
 
 .flex-direction-column-reverse {
   flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
 .direction-rtl {

@@ -58,6 +58,10 @@ body {
   height: auto;
 }
 
+.parent.height {
+  height: 500px;
+}
+
 .child {
   display: grid;
   place-items: center;

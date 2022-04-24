@@ -7,456 +7,561 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="container">
-      <div class="parent">
-        <div class="child child-square child-1">1</div>
-        <div class="child child-square child-2">2</div>
-        <div class="child child-square child-3">3</div>
-        <div class="child child-square child-4">4</div>
-        <div class="child child-square child-5">5</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#01</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-direction:</b> <i>row;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-        <b>direction:</b> <i>ltr;</i>
-      </pre>
+    <main class="container">
+      <section class="example">
+        <div class="parent">
+          <div class="child child-square child-1">1</div>
+          <div class="child child-square child-2">2</div>
+          <div class="child child-square child-3">3</div>
+          <div class="child child-square child-4">4</div>
+          <div class="child child-square child-5">5</div>
+        </div>
 
-      <div class="parent flex-direction-row-reverse">
-        <div class="child child-square child-1">1</div>
-        <div class="child child-square child-2">2</div>
-        <div class="child child-square child-3">3</div>
-        <div class="child child-square child-4">4</div>
-        <div class="child child-square child-5">5</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#02</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-direction:</b> <i>row-reverse;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-        <b>direction:</b> <i>ltr;</i>
-      </pre>
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#01</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-direction:</b> <b>row;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+            <b class="code-property">direction:</b> <b>ltr;</b>
+          </code>
+        </pre>
+      </section>
 
-      <div class="parent flex-direction-column">
-        <div class="child child-square child-1">1</div>
-        <div class="child child-square child-2">2</div>
-        <div class="child child-square child-3">3</div>
-        <div class="child child-square child-4">4</div>
-        <div class="child child-square child-5">5</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#03</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-direction:</b> <i>column;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-        <b>direction:</b> <i>ltr;</i>
-      </pre>
+      <section class="example">
+        <div class="parent flex-direction-row-reverse">
+          <div class="child child-square child-1">1</div>
+          <div class="child child-square child-2">2</div>
+          <div class="child child-square child-3">3</div>
+          <div class="child child-square child-4">4</div>
+          <div class="child child-square child-5">5</div>
+        </div>
 
-      <div class="parent flex-direction-column-reverse">
-        <div class="child child-square child-1">1</div>
-        <div class="child child-square child-2">2</div>
-        <div class="child child-square child-3">3</div>
-        <div class="child child-square child-4">4</div>
-        <div class="child child-square child-5">5</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#04</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-direction:</b> <i>column-reverse;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-        <b>direction:</b> <i>ltr;</i>
-      </pre>
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#02</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-direction:</b> <b>row-reverse;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+            <b class="code-property">direction:</b> <b>ltr;</b>
+          </code>
+        </pre>
+      </section>
 
-      <div class="parent direction-rtl">
-        <div class="child child-square child-1">1</div>
-        <div class="child child-square child-2">2</div>
-        <div class="child child-square child-3">3</div>
-        <div class="child child-square child-4">4</div>
-        <div class="child child-square child-5">5</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#05</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-direction:</b> <i>row;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-        <b>direction:</b> <i>rtl;</i>
-      </pre>
+      <section class="example">
+        <div class="parent flex-direction-column">
+          <div class="child child-square child-1">1</div>
+          <div class="child child-square child-2">2</div>
+          <div class="child child-square child-3">3</div>
+          <div class="child child-square child-4">4</div>
+          <div class="child child-square child-5">5</div>
+        </div>
 
-      <div class="parent flex-direction-row-reverse direction-rtl">
-        <div class="child child-square child-1">1</div>
-        <div class="child child-square child-2">2</div>
-        <div class="child child-square child-3">3</div>
-        <div class="child child-square child-4">4</div>
-        <div class="child child-square child-5">5</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#06</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-direction:</b> <i>row-reverse;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-        <b>direction:</b> <i>rtl;</i>
-      </pre>
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#03</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-direction:</b> <b>column;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+            <b class="code-property">direction:</b> <b>ltr;</b>
+          </code>
+        </pre>
+      </section>
 
-      <div class="parent flex-direction-column direction-rtl">
-        <div class="child child-square child-1">1</div>
-        <div class="child child-square child-2">2</div>
-        <div class="child child-square child-3">3</div>
-        <div class="child child-square child-4">4</div>
-        <div class="child child-square child-5">5</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#07</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-direction:</b> <i>column;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-        <b>direction:</b> <i>rtl;</i>
-      </pre>
+      <section class="example">
+        <div class="parent flex-direction-column-reverse">
+          <div class="child child-square child-1">1</div>
+          <div class="child child-square child-2">2</div>
+          <div class="child child-square child-3">3</div>
+          <div class="child child-square child-4">4</div>
+          <div class="child child-square child-5">5</div>
+        </div>
 
-      <div class="parent flex-direction-column-reverse direction-rtl">
-        <div class="child child-square child-1">1</div>
-        <div class="child child-square child-2">2</div>
-        <div class="child child-square child-3">3</div>
-        <div class="child child-square child-4">4</div>
-        <div class="child child-square child-5">5</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#08</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-direction:</b> <i>column-reverse;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-        <b>direction:</b> <i>rtl;</i>
-      </pre>
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#04</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-direction:</b> <b>column-reverse;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+            <b class="code-property">direction:</b> <b>ltr;</b>
+          </code>
+        </pre>
+      </section>
 
-      <div class="parent cjk-characters">
-        <div class="child child-square child-1">1</div>
-        <div class="child child-square child-2">2</div>
-        <div class="child child-square child-3">3</div>
-        <div class="child child-square child-4">4</div>
-        <div class="child child-square child-5">5</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#09</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-direction:</b> <i>row;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-        <b>writing-mode:</b> <i>vertical-rl;</i>
-        <b>text-orientation:</b> <i>upright;</i>
-      </pre>
+      <section class="example">
+        <div class="parent direction-rtl">
+          <div class="child child-square child-1">1</div>
+          <div class="child child-square child-2">2</div>
+          <div class="child child-square child-3">3</div>
+          <div class="child child-square child-4">4</div>
+          <div class="child child-square child-5">5</div>
+        </div>
 
-      <div class="parent flex-direction-row-reverse cjk-characters">
-        <div class="child child-square child-1">1</div>
-        <div class="child child-square child-2">2</div>
-        <div class="child child-square child-3">3</div>
-        <div class="child child-square child-4">4</div>
-        <div class="child child-square child-5">5</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#10</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-direction:</b> <i>row-reverse;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-        <b>writing-mode:</b> <i>vertical-rl;</i>
-        <b>text-orientation:</b> <i>upright;</i>
-      </pre>
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#05</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-direction:</b> <b>row;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+            <b class="code-property">direction:</b> <b>rtl;</b>
+          </code>
+        </pre>
+      </section>
 
-      <div class="parent flex-direction-column cjk-characters">
-        <div class="child child-square child-1">1</div>
-        <div class="child child-square child-2">2</div>
-        <div class="child child-square child-3">3</div>
-        <div class="child child-square child-4">4</div>
-        <div class="child child-square child-5">5</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#11</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-direction:</b> <i>column;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-        <b>writing-mode:</b> <i>vertical-rl;</i>
-        <b>text-orientation:</b> <i>upright;</i>
-      </pre>
+      <section class="example">
+        <div class="parent flex-direction-row-reverse direction-rtl">
+          <div class="child child-square child-1">1</div>
+          <div class="child child-square child-2">2</div>
+          <div class="child child-square child-3">3</div>
+          <div class="child child-square child-4">4</div>
+          <div class="child child-square child-5">5</div>
+        </div>
 
-      <div class="parent flex-direction-column-reverse cjk-characters">
-        <div class="child child-square child-1">1</div>
-        <div class="child child-square child-2">2</div>
-        <div class="child child-square child-3">3</div>
-        <div class="child child-square child-4">4</div>
-        <div class="child child-square child-5">5</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#12</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-direction:</b> <i>column-reverse;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-        <b>writing-mode:</b> <i>vertical-rl;</i>
-        <b>text-orientation:</b> <i>upright;</i>
-      </pre>
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#06</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-direction:</b> <b>row-reverse;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+            <b class="code-property">direction:</b> <b>rtl;</b>
+          </code>
+        </pre>
+      </section>
 
-      <div class="parent">
-        <div class="child child-rectangle child-A">A</div>
-        <div class="child child-rectangle child-B">BB</div>
-        <div class="child child-rectangle child-C">CCC</div>
-        <div class="child child-rectangle child-D">DDDD</div>
-        <div class="child child-rectangle child-E">EEEEE</div>
-        <div class="child child-rectangle child-F">FFFFFF</div>
-        <div class="child child-rectangle child-G">GGGGGGG</div>
-        <div class="child child-rectangle child-H">HHHHHHHH</div>
-        <div class="child child-rectangle child-I">IIIIIIIII</div>
-        <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
-        <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
-        <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
-        <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
-        <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
-        <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
-        <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
-        <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
-        <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
-        <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
-        <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#13</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-      </pre>
+      <section class="example">
+        <div class="parent flex-direction-column direction-rtl">
+          <div class="child child-square child-1">1</div>
+          <div class="child child-square child-2">2</div>
+          <div class="child child-square child-3">3</div>
+          <div class="child child-square child-4">4</div>
+          <div class="child child-square child-5">5</div>
+        </div>
 
-      <div class="parent flex-wrap">
-        <div class="child child-rectangle child-A">A</div>
-        <div class="child child-rectangle child-B">BB</div>
-        <div class="child child-rectangle child-C">CCC</div>
-        <div class="child child-rectangle child-D">DDDD</div>
-        <div class="child child-rectangle child-E">EEEEE</div>
-        <div class="child child-rectangle child-F">FFFFFF</div>
-        <div class="child child-rectangle child-G">GGGGGGG</div>
-        <div class="child child-rectangle child-H">HHHHHHHH</div>
-        <div class="child child-rectangle child-I">IIIIIIIII</div>
-        <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
-        <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
-        <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
-        <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
-        <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
-        <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
-        <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
-        <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
-        <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
-        <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
-        <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#14</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-wrap:</b> <i>wrap;</i>
-      </pre>
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#07</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-direction:</b> <b>column;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+            <b class="code-property">direction:</b> <b>rtl;</b>
+          </code>
+        </pre>
+      </section>
 
-      <div class="parent flex-wrap-reverse">
-        <div class="child child-rectangle child-A">A</div>
-        <div class="child child-rectangle child-B">BB</div>
-        <div class="child child-rectangle child-C">CCC</div>
-        <div class="child child-rectangle child-D">DDDD</div>
-        <div class="child child-rectangle child-E">EEEEE</div>
-        <div class="child child-rectangle child-F">FFFFFF</div>
-        <div class="child child-rectangle child-G">GGGGGGG</div>
-        <div class="child child-rectangle child-H">HHHHHHHH</div>
-        <div class="child child-rectangle child-I">IIIIIIIII</div>
-        <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
-        <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
-        <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
-        <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
-        <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
-        <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
-        <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
-        <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
-        <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
-        <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
-        <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#15</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>flex-wrap:</b> <i>wrap-reverse;</i>
-      </pre>
+      <section class="example">
+        <div class="parent flex-direction-column-reverse direction-rtl">
+          <div class="child child-square child-1">1</div>
+          <div class="child child-square child-2">2</div>
+          <div class="child child-square child-3">3</div>
+          <div class="child child-square child-4">4</div>
+          <div class="child child-square child-5">5</div>
+        </div>
 
-      <div class="parent height flex-direction-column">
-        <div class="child child-rectangle child-A">A</div>
-        <div class="child child-rectangle child-B">BB</div>
-        <div class="child child-rectangle child-C">CCC</div>
-        <div class="child child-rectangle child-D">DDDD</div>
-        <div class="child child-rectangle child-E">EEEEE</div>
-        <div class="child child-rectangle child-F">FFFFFF</div>
-        <div class="child child-rectangle child-G">GGGGGGG</div>
-        <div class="child child-rectangle child-H">HHHHHHHH</div>
-        <div class="child child-rectangle child-I">IIIIIIIII</div>
-        <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
-        <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
-        <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
-        <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
-        <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
-        <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
-        <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
-        <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
-        <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
-        <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
-        <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#16</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>height:</b> <i>500px;</i>
-        <b>flex-direction:</b> <i>column;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-      </pre>
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#08</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-direction:</b> <b>column-reverse;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+            <b class="code-property">direction:</b> <b>rtl;</b>
+          </code>
+        </pre>
+      </section>
 
-      <div class="parent height flex-direction-column flex-wrap">
-        <div class="child child-rectangle child-A">A</div>
-        <div class="child child-rectangle child-B">BB</div>
-        <div class="child child-rectangle child-C">CCC</div>
-        <div class="child child-rectangle child-D">DDDD</div>
-        <div class="child child-rectangle child-E">EEEEE</div>
-        <div class="child child-rectangle child-F">FFFFFF</div>
-        <div class="child child-rectangle child-G">GGGGGGG</div>
-        <div class="child child-rectangle child-H">HHHHHHHH</div>
-        <div class="child child-rectangle child-I">IIIIIIIII</div>
-        <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
-        <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
-        <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
-        <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
-        <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
-        <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
-        <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
-        <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
-        <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
-        <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
-        <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#17</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>height:</b> <i>500px;</i>
-        <b>flex-direction:</b> <i>column;</i>
-        <b>flex-wrap:</b> <i>wrap;</i>
-      </pre>
+      <section class="example">
+        <div class="parent cjk-characters">
+          <div class="child child-square child-1">1</div>
+          <div class="child child-square child-2">2</div>
+          <div class="child child-square child-3">3</div>
+          <div class="child child-square child-4">4</div>
+          <div class="child child-square child-5">5</div>
+        </div>
 
-      <div class="parent height flex-direction-column flex-wrap-reverse">
-        <div class="child child-rectangle child-A">A</div>
-        <div class="child child-rectangle child-B">BB</div>
-        <div class="child child-rectangle child-C">CCC</div>
-        <div class="child child-rectangle child-D">DDDD</div>
-        <div class="child child-rectangle child-E">EEEEE</div>
-        <div class="child child-rectangle child-F">FFFFFF</div>
-        <div class="child child-rectangle child-G">GGGGGGG</div>
-        <div class="child child-rectangle child-H">HHHHHHHH</div>
-        <div class="child child-rectangle child-I">IIIIIIIII</div>
-        <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
-        <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
-        <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
-        <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
-        <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
-        <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
-        <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
-        <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
-        <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
-        <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
-        <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#18</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>height:</b> <i>500px;</i>
-        <b>flex-direction:</b> <i>column;</i>
-        <b>flex-wrap:</b> <i>wrap-reverse;</i>
-      </pre>
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#09</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-direction:</b> <b>row;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+            <b class="code-property">writing-mode:</b> <b>vertical-rl;</b>
+            <b class="code-property">text-orientation:</b> <b>upright;</b>
+          </code>
+        </pre>
+      </section>
 
-      <div class="parent height flex-direction-column-reverse">
-        <div class="child child-rectangle child-A">A</div>
-        <div class="child child-rectangle child-B">BB</div>
-        <div class="child child-rectangle child-C">CCC</div>
-        <div class="child child-rectangle child-D">DDDD</div>
-        <div class="child child-rectangle child-E">EEEEE</div>
-        <div class="child child-rectangle child-F">FFFFFF</div>
-        <div class="child child-rectangle child-G">GGGGGGG</div>
-        <div class="child child-rectangle child-H">HHHHHHHH</div>
-        <div class="child child-rectangle child-I">IIIIIIIII</div>
-        <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
-        <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
-        <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
-        <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
-        <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
-        <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
-        <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
-        <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
-        <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
-        <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
-        <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#19</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>height:</b> <i>500px;</i>
-        <b>flex-direction:</b> <i>column-reverse;</i>
-        <b>flex-wrap:</b> <i>no-wrap;</i>
-      </pre>
+      <section class="example">
+        <div class="parent flex-direction-row-reverse cjk-characters">
+          <div class="child child-square child-1">1</div>
+          <div class="child child-square child-2">2</div>
+          <div class="child child-square child-3">3</div>
+          <div class="child child-square child-4">4</div>
+          <div class="child child-square child-5">5</div>
+        </div>
 
-      <div class="parent height flex-direction-column-reverse flex-wrap">
-        <div class="child child-rectangle child-A">A</div>
-        <div class="child child-rectangle child-B">BB</div>
-        <div class="child child-rectangle child-C">CCC</div>
-        <div class="child child-rectangle child-D">DDDD</div>
-        <div class="child child-rectangle child-E">EEEEE</div>
-        <div class="child child-rectangle child-F">FFFFFF</div>
-        <div class="child child-rectangle child-G">GGGGGGG</div>
-        <div class="child child-rectangle child-H">HHHHHHHH</div>
-        <div class="child child-rectangle child-I">IIIIIIIII</div>
-        <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
-        <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
-        <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
-        <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
-        <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
-        <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
-        <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
-        <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
-        <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
-        <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
-        <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#20</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>height:</b> <i>500px;</i>
-        <b>flex-direction:</b> <i>column-reverse;</i>
-        <b>flex-wrap:</b> <i>wrap;</i>
-      </pre>
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#10</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-direction:</b> <b>row-reverse;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+            <b class="code-property">writing-mode:</b> <b>vertical-rl;</b>
+            <b class="code-property">text-orientation:</b> <b>upright;</b>
+          </code>
+        </pre>
+      </section>
 
-      <div
-        class="parent height flex-direction-column-reverse flex-wrap-reverse"
-      >
-        <div class="child child-rectangle child-A">A</div>
-        <div class="child child-rectangle child-B">BB</div>
-        <div class="child child-rectangle child-C">CCC</div>
-        <div class="child child-rectangle child-D">DDDD</div>
-        <div class="child child-rectangle child-E">EEEEE</div>
-        <div class="child child-rectangle child-F">FFFFFF</div>
-        <div class="child child-rectangle child-G">GGGGGGG</div>
-        <div class="child child-rectangle child-H">HHHHHHHH</div>
-        <div class="child child-rectangle child-I">IIIIIIIII</div>
-        <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
-        <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
-        <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
-        <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
-        <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
-        <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
-        <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
-        <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
-        <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
-        <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
-        <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
-      </div>
-      <pre class="code-snippet">
-        <b><u>#21</u></b>
-        <b>display:</b> <i>flex;</i>
-        <b>height:</b> <i>500px;</i>
-        <b>flex-direction:</b> <i>column-reverse;</i>
-        <b>flex-wrap:</b> <i>wrap-reverse;</i>
-      </pre>
-    </section>
+      <section class="example">
+        <div class="parent flex-direction-column cjk-characters">
+          <div class="child child-square child-1">1</div>
+          <div class="child child-square child-2">2</div>
+          <div class="child child-square child-3">3</div>
+          <div class="child child-square child-4">4</div>
+          <div class="child child-square child-5">5</div>
+        </div>
+
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#11</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-direction:</b> <b>column;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+            <b class="code-property">writing-mode:</b> <b>vertical-rl;</b>
+            <b class="code-property">text-orientation:</b> <b>upright;</b>
+          </code>
+        </pre>
+      </section>
+
+      <section class="example">
+        <div class="parent flex-direction-column-reverse cjk-characters">
+          <div class="child child-square child-1">1</div>
+          <div class="child child-square child-2">2</div>
+          <div class="child child-square child-3">3</div>
+          <div class="child child-square child-4">4</div>
+          <div class="child child-square child-5">5</div>
+        </div>
+
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#12</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-direction:</b> <b>column-reverse;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+            <b class="code-property">writing-mode:</b> <b>vertical-rl;</b>
+            <b class="code-property">text-orientation:</b> <b>upright;</b>
+          </code>
+        </pre>
+      </section>
+
+      <section class="example">
+        <div class="parent">
+          <div class="child child-rectangle child-A">A</div>
+          <div class="child child-rectangle child-B">BB</div>
+          <div class="child child-rectangle child-C">CCC</div>
+          <div class="child child-rectangle child-D">DDDD</div>
+          <div class="child child-rectangle child-E">EEEEE</div>
+          <div class="child child-rectangle child-F">FFFFFF</div>
+          <div class="child child-rectangle child-G">GGGGGGG</div>
+          <div class="child child-rectangle child-H">HHHHHHHH</div>
+          <div class="child child-rectangle child-I">IIIIIIIII</div>
+          <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
+          <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
+          <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
+          <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
+          <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
+          <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
+          <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
+          <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
+          <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
+          <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
+          <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
+        </div>
+
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#13</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+          </code>
+        </pre>
+      </section>
+
+      <section class="example">
+        <div class="parent flex-wrap">
+          <div class="child child-rectangle child-A">A</div>
+          <div class="child child-rectangle child-B">BB</div>
+          <div class="child child-rectangle child-C">CCC</div>
+          <div class="child child-rectangle child-D">DDDD</div>
+          <div class="child child-rectangle child-E">EEEEE</div>
+          <div class="child child-rectangle child-F">FFFFFF</div>
+          <div class="child child-rectangle child-G">GGGGGGG</div>
+          <div class="child child-rectangle child-H">HHHHHHHH</div>
+          <div class="child child-rectangle child-I">IIIIIIIII</div>
+          <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
+          <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
+          <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
+          <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
+          <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
+          <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
+          <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
+          <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
+          <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
+          <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
+          <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
+        </div>
+
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#14</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-wrap:</b> <b>wrap;</b>
+          </code>
+        </pre>
+      </section>
+
+      <section class="example">
+        <div class="parent flex-wrap-reverse">
+          <div class="child child-rectangle child-A">A</div>
+          <div class="child child-rectangle child-B">BB</div>
+          <div class="child child-rectangle child-C">CCC</div>
+          <div class="child child-rectangle child-D">DDDD</div>
+          <div class="child child-rectangle child-E">EEEEE</div>
+          <div class="child child-rectangle child-F">FFFFFF</div>
+          <div class="child child-rectangle child-G">GGGGGGG</div>
+          <div class="child child-rectangle child-H">HHHHHHHH</div>
+          <div class="child child-rectangle child-I">IIIIIIIII</div>
+          <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
+          <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
+          <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
+          <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
+          <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
+          <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
+          <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
+          <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
+          <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
+          <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
+          <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
+        </div>
+
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#15</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">flex-wrap:</b> <b>wrap-reverse;</b>
+          </code>
+        </pre>
+      </section>
+
+      <section class="example">
+        <div class="parent height flex-direction-column">
+          <div class="child child-rectangle child-A">A</div>
+          <div class="child child-rectangle child-B">BB</div>
+          <div class="child child-rectangle child-C">CCC</div>
+          <div class="child child-rectangle child-D">DDDD</div>
+          <div class="child child-rectangle child-E">EEEEE</div>
+          <div class="child child-rectangle child-F">FFFFFF</div>
+          <div class="child child-rectangle child-G">GGGGGGG</div>
+          <div class="child child-rectangle child-H">HHHHHHHH</div>
+          <div class="child child-rectangle child-I">IIIIIIIII</div>
+          <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
+          <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
+          <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
+          <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
+          <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
+          <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
+          <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
+          <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
+          <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
+          <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
+          <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
+        </div>
+
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#16</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">height:</b> <b>500px;</b>
+            <b class="code-property">flex-direction:</b> <b>column;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+          </code>
+        </pre>
+      </section>
+
+      <section class="example">
+        <div class="parent height flex-direction-column flex-wrap">
+          <div class="child child-rectangle child-A">A</div>
+          <div class="child child-rectangle child-B">BB</div>
+          <div class="child child-rectangle child-C">CCC</div>
+          <div class="child child-rectangle child-D">DDDD</div>
+          <div class="child child-rectangle child-E">EEEEE</div>
+          <div class="child child-rectangle child-F">FFFFFF</div>
+          <div class="child child-rectangle child-G">GGGGGGG</div>
+          <div class="child child-rectangle child-H">HHHHHHHH</div>
+          <div class="child child-rectangle child-I">IIIIIIIII</div>
+          <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
+          <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
+          <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
+          <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
+          <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
+          <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
+          <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
+          <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
+          <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
+          <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
+          <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
+        </div>
+
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#17</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">height:</b> <b>500px;</b>
+            <b class="code-property">flex-direction:</b> <b>column;</b>
+            <b class="code-property">flex-wrap:</b> <b>wrap;</b>
+          </code>
+        </pre>
+      </section>
+
+      <section class="example">
+        <div class="parent height flex-direction-column flex-wrap-reverse">
+          <div class="child child-rectangle child-A">A</div>
+          <div class="child child-rectangle child-B">BB</div>
+          <div class="child child-rectangle child-C">CCC</div>
+          <div class="child child-rectangle child-D">DDDD</div>
+          <div class="child child-rectangle child-E">EEEEE</div>
+          <div class="child child-rectangle child-F">FFFFFF</div>
+          <div class="child child-rectangle child-G">GGGGGGG</div>
+          <div class="child child-rectangle child-H">HHHHHHHH</div>
+          <div class="child child-rectangle child-I">IIIIIIIII</div>
+          <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
+          <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
+          <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
+          <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
+          <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
+          <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
+          <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
+          <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
+          <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
+          <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
+          <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
+        </div>
+
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#18</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">height:</b> <b>500px;</b>
+            <b class="code-property">flex-direction:</b> <b>column;</b>
+            <b class="code-property">flex-wrap:</b> <b>wrap-reverse;</b>
+          </code>
+        </pre>
+      </section>
+
+      <section class="example">
+        <div class="parent height flex-direction-column-reverse">
+          <div class="child child-rectangle child-A">A</div>
+          <div class="child child-rectangle child-B">BB</div>
+          <div class="child child-rectangle child-C">CCC</div>
+          <div class="child child-rectangle child-D">DDDD</div>
+          <div class="child child-rectangle child-E">EEEEE</div>
+          <div class="child child-rectangle child-F">FFFFFF</div>
+          <div class="child child-rectangle child-G">GGGGGGG</div>
+          <div class="child child-rectangle child-H">HHHHHHHH</div>
+          <div class="child child-rectangle child-I">IIIIIIIII</div>
+          <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
+          <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
+          <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
+          <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
+          <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
+          <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
+          <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
+          <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
+          <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
+          <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
+          <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
+        </div>
+
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#19</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">height:</b> <b>500px;</b>
+            <b class="code-property">flex-direction:</b> <b>column-reverse;</b>
+            <b class="code-property">flex-wrap:</b> <b>no-wrap;</b>
+          </code>
+        </pre>
+      </section>
+
+      <section class="example">
+        <div class="parent height flex-direction-column-reverse flex-wrap">
+          <div class="child child-rectangle child-A">A</div>
+          <div class="child child-rectangle child-B">BB</div>
+          <div class="child child-rectangle child-C">CCC</div>
+          <div class="child child-rectangle child-D">DDDD</div>
+          <div class="child child-rectangle child-E">EEEEE</div>
+          <div class="child child-rectangle child-F">FFFFFF</div>
+          <div class="child child-rectangle child-G">GGGGGGG</div>
+          <div class="child child-rectangle child-H">HHHHHHHH</div>
+          <div class="child child-rectangle child-I">IIIIIIIII</div>
+          <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
+          <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
+          <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
+          <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
+          <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
+          <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
+          <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
+          <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
+          <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
+          <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
+          <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
+        </div>
+
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#20</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">height:</b> <b>500px;</b>
+            <b class="code-property">flex-direction:</b> <b>column-reverse;</b>
+            <b class="code-property">flex-wrap:</b> <b>wrap;</b>
+          </code>
+        </pre>
+      </section>
+
+      <section class="example">
+        <div
+          class="parent height flex-direction-column-reverse flex-wrap-reverse"
+        >
+          <div class="child child-rectangle child-A">A</div>
+          <div class="child child-rectangle child-B">BB</div>
+          <div class="child child-rectangle child-C">CCC</div>
+          <div class="child child-rectangle child-D">DDDD</div>
+          <div class="child child-rectangle child-E">EEEEE</div>
+          <div class="child child-rectangle child-F">FFFFFF</div>
+          <div class="child child-rectangle child-G">GGGGGGG</div>
+          <div class="child child-rectangle child-H">HHHHHHHH</div>
+          <div class="child child-rectangle child-I">IIIIIIIII</div>
+          <div class="child child-rectangle child-J">JJJJJJJJJJ</div>
+          <div class="child child-rectangle child-K">KKKKKKKKKKK</div>
+          <div class="child child-rectangle child-L">LLLLLLLLLLLL</div>
+          <div class="child child-rectangle child-M">MMMMMMMMMMMMM</div>
+          <div class="child child-rectangle child-N">NNNNNNNNNNNNNN</div>
+          <div class="child child-rectangle child-O">OOOOOOOOOOOOOOO</div>
+          <div class="child child-rectangle child-P">PPPPPPPPPPPPPPPPP</div>
+          <div class="child child-rectangle child-R">RRRRRRRRRRRRRRRRR</div>
+          <div class="child child-rectangle child-S">SSSSSSSSSSSSSSSSSS</div>
+          <div class="child child-rectangle child-T">TTTTTTTTTTTTTTTTTTT</div>
+          <div class="child child-rectangle child-U">UUUUUUUUUUUUUUUUUUUU</div>
+        </div>
+
+        <pre class="codeblock">
+          <code>
+            <b class="code-title">#21</b>
+            <b class="code-property">display:</b> <b>flex;</b>
+            <b class="code-property">height:</b> <b>500px;</b>
+            <b class="code-property">flex-direction:</b> <b>column-reverse;</b>
+            <b class="code-property">flex-wrap:</b> <b>wrap-reverse;</b>
+          </code>
+        </pre>
+      </section>
+    </main>
   </body>
 </html>

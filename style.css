@@ -51,11 +51,15 @@ body {
   margin: 2rem;
 }
 
+.example {
+  width: 100%;
+}
+
 .parent {
   display: flex;
-  border: 1px solid var(--yangColor);
   width: 100%;
   height: auto;
+  border: 1px solid var(--yangColor);
 }
 
 .parent.height {
@@ -78,9 +82,20 @@ body {
   height: var(--size);
 }
 
-.code-snippet {
+.codeblock {
+  position: relative;
   color: var(--yangColor);
-  margin: 10px 0 20px 0;
+  margin: 20px 0;
+  background-color: var(--child-U);
+  border: 1px solid var(--child-3);
+}
+
+.code-title {
+  color: var(--child-3);
+}
+
+.code-property {
+  color: var(--child-2);
 }
 
 .child-1 {

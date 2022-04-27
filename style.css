@@ -27,6 +27,7 @@
   --child-T: #370617;
   --child-U: #03071e;
   --size: 4rem;
+  --gap: 3rem;
 }
 
 body {
@@ -52,6 +53,14 @@ body {
 }
 
 .example {
+  width: 100%;
+  overflow: hidden;
+}
+
+.example:not(:first-child) {
+  margin-top: var(--gap);
+  padding-top: var(--gap);
+  border-top: var(--child-5) 5px dotted;
   width: 100%;
 }
 
@@ -222,6 +231,26 @@ body {
 
 .flex-wrap-reverse {
   flex-wrap: wrap-reverse;
+}
+
+.flex-justify-content-end {
+  justify-content: flex-end;
+}
+
+.flex-justify-content-center {
+  justify-content: center;
+}
+
+.flex-justify-content-space-between {
+  justify-content: space-between;
+}
+
+.flex-justify-content-space-around {
+  justify-content: space-around;
+}
+
+.flex-justify-content-space-evenly {
+  justify-content: space-evenly;
 }
 
 .direction-rtl {

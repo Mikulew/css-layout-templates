@@ -273,6 +273,30 @@ body {
   align-items: baseline;
 }
 
+.flex-align-content-start {
+  align-content: flex-start;
+}
+
+.flex-align-content-end {
+  align-content: flex-end;
+}
+
+.flex-align-content-center {
+  align-content: center;
+}
+
+.flex-align-content-space-between {
+  align-content: space-between;
+}
+
+.flex-align-content-space-around {
+  align-content: space-around;
+}
+
+.flex-align-content-space-evenly {
+  align-content: space-evenly;
+}
+
 .direction-rtl {
   direction: rtl;
 }

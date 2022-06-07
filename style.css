@@ -305,3 +305,15 @@ body {
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
+
+.example-46 .child {
+  flex: initial;
+}
+
+.example-47 .child {
+  flex: auto;
+}
+
+.example-48 .child {
+  flex: none;
+}
